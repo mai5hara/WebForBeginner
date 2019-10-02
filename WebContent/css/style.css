@@ -56,23 +56,63 @@ div#test {
 /* ------------------------------------------ */
 
 header {
-    background-color: #ccc;
-    height: 100px;
+    border-bottom: 1px solid #A4A4A4;
+    height: 44px;
 }
 
 footer {
-    background-color: #ccc;
-    height: 100px;
-
+    background-color: #C4C4C4;
+    height: 35px;
 }
 
 /* Header */
-#login-link {
-    text-decoration: none;
+.inner-h {
+
 }
 
-#jp {
+#logo {
+    float: left;
+    /* TODO: 後で調整 */
+    margin: 5px 0 0 13px;
+}
+
+#login-link,
+#jp,
+#en {
+    box-sizing: border-box;
+    border: 1px solid #A4A4A4;
+    height: 22px;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    font-size: 14px;
+    color: #000;
+    margin-top: 11px
+}
+
+#login-link {
+    width: 53px;
+    margin-right: 11px;
+}
+
+#jp,
+#en {
+    width: 26px;
 }
 
 #en {
+    margin-right: 11px;
 }
+
+/* Footer */
+
+.footer-contents {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 11px
+
+}
+
+
