@@ -285,6 +285,69 @@ h1 {
     opacity: 0.8;
 }
 
+/* home
+------------------------------------------------------------*/
+
+.home_contents {
+    text-align: center;
+}
+
+.home_language_flex {
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.home_language {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home_language_content {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 20px;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.home_language_text {
+    padding-top: 75px;
+    background-color: #FF6954;
+    z-index: 1;
+    position: relative;
+    color: #FFF;
+}
+
+.home_logo {
+    position: relative;
+    justify-content: center;
+    width: auto;
+    height: 75px;
+    z-index: 2;
+    left: 50%;
+    top: -20px;
+}
+
+.home_language_text::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 160px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: #EAEAEA;
+    border-radius: 0 0 90px 90px;
+    -moz-border-radius: 0 0 90px 90px;
+    -webkit-border-radius: 0 0 90px 90px;
+    z-index: 1;
+}
+
+.home_lesson {
+    font-size: 1.2rem;
+}
+
 /*===========================================================
    Contents end
 ===========================================================*/
