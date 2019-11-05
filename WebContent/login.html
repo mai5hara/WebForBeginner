@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/0020439f70.js" crossorigin="anonymous"></script>
+
+    <title>login</title>
+</head>
+
+<body>
+    <div class="login_flex">
+        <!-- title -->
+        <div class="login_title">
+            <img src="img/brushmap_logo_whitever.png" class="login_brushmap_logo">
+            <h1>Brush Map</h1>
+            <h3>Let's enjoy programming!</h3>
+        </div>
+        <!-- form -->
+        <div class="login_info">
+            <div class="login_info_btn">
+                <div class="language_change">
+                    <p id="en">EN</p>
+                    <p id="jp">JP</p>
+                </div>
+            </div>
+            <form id="login_form" action="">
+                <div class="login_tab">
+                    <div class="login_sign_up"><p id="sign_up_link" class="login_enabled" onclick="alterMode();">Sign up</p></div>
+                    <div class="login_or">or</div>
+                    <div class="login_log_in"><p id="log_in_link" class="login_disabled" onclick="alterMode();">Log in</p></div>
+                </div>
+                <div class="login_input_field">
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <a href="">Forgot password?</a>
+                </div>
+                <input type="button" value="Log in" id="login_button" class="login_submit">
+                <input type="button" value="Sign up" id="signup_button" class="login_submit" style="display: none;">
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/language_change.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
