@@ -1,8 +1,10 @@
 @charset 'UTF-8';
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
-/* Base
-------------------------------------------------------------*/
+
+/*===========================================================
+   Base
+===========================================================*/
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -20,8 +22,9 @@ h1 {
     font-family: 'Roboto Slab', serif;
 }
 
-/* Header
-------------------------------------------------------------*/
+/*===========================================================
+   Header
+===========================================================*/
 
 header {
     display: flex;
@@ -92,9 +95,6 @@ header {
    Contents
 ===========================================================*/
 
-/* Body
-------------------------------------------------------------*/
-
 .contents_section {
     width: 80%;
     margin: 0 auto;
@@ -160,8 +160,9 @@ header {
     margin-bottom: 12px;
 }
 
-/* login
-------------------------------------------------------------*/
+/*===========================================================
+   login
+===========================================================*/
 
 .login_flex {
     display: flex;
@@ -286,10 +287,75 @@ header {
 }
 
 /*===========================================================
+   home
+===========================================================*/
+
+.home_contents {
+    text-align: center;
+}
+
+.home_language_flex {
+    display: flex;
+    /* width: 85%; */
+    margin: 0 10%;
+}
+
+.home_language {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home_language_content {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 20px;
+    justify-content: space-between;
+    width: 33%;
+}
+
+.home_language_text {
+    width: 80%;
+    /* margin-right: 10%; */
+    padding-top: 75px;
+    background-color: #FF6954;
+    z-index: 1;
+    position: relative;
+    color: #FFF;
+}
+
+.home_logo {
+    position: relative;
+    justify-content: center;
+    width: auto;
+    height: 75px;
+    z-index: 2;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -20px;
+}
+
+.home_language_text::before {
+    content: "";
+    position: absolute;
+    height: 30%;
+    width: 60%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: #EAEAEA;
+    border-radius: 0 0 90px 90px;
+    -moz-border-radius: 0 0 90px 90px;
+    -webkit-border-radius: 0 0 90px 90px;
+    z-index: 1;
+}
+
+.home_lesson {
+    font-size: 1.2rem;
+}
+
+/*===========================================================
    Choose game
 ===========================================================*/
-/* Body
-------------------------------------------------------------*/
 
 .choosegame_titles {
     text-align: center;
@@ -373,8 +439,9 @@ header {
     color: #fff;
 }
 
-/* Cording challenge
-------------------------------------------------------------*/
+/*===========================================================
+   Cording challenge
+===========================================================*/
 
 .cordingchallenge_section {
     width: 70%;
@@ -517,8 +584,9 @@ header {
 }
 
 
-/* Footer
-------------------------------------------------------------*/
+/*===========================================================
+   Footer
+===========================================================*/
 
 footer {
     background-color: #FF6954;
